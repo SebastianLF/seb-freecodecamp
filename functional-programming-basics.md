@@ -20,7 +20,7 @@ sliceArray(inputAnim, 1, 3);
 :heavy_check_mark: sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 3) should return ["Dog", "Tiger"].<br/>
 :heavy_check_mark: sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 0, 1) should return ["Cat"].<br/>
 :heavy_check_mark: sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 4) should return ["Dog", "Tiger", "Zebra"].
-<br/><br/><br/><br/>
+<br/><br/>
 ## challenge #12: 
 ##### Functional Programming: Remove Elements from an Array Using slice Instead of splice
 
