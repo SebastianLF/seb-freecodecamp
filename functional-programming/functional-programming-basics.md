@@ -81,3 +81,35 @@ nonMutatingPush(first, second);
 :heavy_check_mark:The first array should not change.<br/>
 :heavy_check_mark:The second array should not change.<br/>
 :heavy_check_mark:nonMutatingPush([1, 2, 3], [4, 5]) should return [1, 2, 3, 4, 5].
+<br/><br/>
+## challenge #15: 
+##### Functional Programming: Use the reduce Method to Analyze Data
+
+:heavy_exclamation_mark: The global variable is [here](https://github.com/zelol/seb-freecodecamp/blob/master/functional-programming/watchList.md).
+
+```
+// Add your code below this line
+
+var averageRating;
+var length;
+
+averageRating = watchList
+.filter(function(value, index, arr) {
+  return value.Director === "Christopher Nolan";
+})
+.reduce(function(acc, value, index, arr){
+  length = index + 1;
+  return acc + Number(value.imdbRating);
+}, 0);
+
+averageRating /= length;
+
+// Add your code above this line
+
+console.log(averageRating); 
+```
+
+:heavy_check_mark: The watchList variable should not change.<br/>
+:heavy_check_mark: Your code should use the reduce method.<br/>
+:heavy_check_mark: The averageRating should equal 8.675.<br/>
+:heavy_check_mark: Your code should not use a for loop.
