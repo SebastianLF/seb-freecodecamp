@@ -20,7 +20,8 @@ sliceArray(inputAnim, 1, 3);
 - sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 0, 1) should return ["Cat"].
 - sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 4) should return ["Dog", "Tiger", "Zebra"].
 <br/><br/><br/><br/>
-## challenge #12:
+## challenge #12: 
+##### Functional Programming: Remove Elements from an Array Using slice Instead of splice
 
 ```
 function nonMutatingSplice(cities) {
