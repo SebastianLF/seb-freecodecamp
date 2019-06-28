@@ -60,3 +60,24 @@ nonMutatingConcat(first, second);
 :heavy_check_mark: The first array should not change.<br/>
 :heavy_check_mark: The second array should not change.<br/>
 :heavy_check_mark: nonMutatingConcat([1, 2, 3], [4, 5]) should return [1, 2, 3, 4, 5].
+<br/><br/>
+## challenge #14: 
+##### Functional Programming: Add Elements to the End of an Array Using concat Instead of push
+
+```
+function nonMutatingPush(original, newItem) {
+  // Add your code below this line
+  return [].concat(original).concat(newItem);
+  
+  // Add your code above this line
+}
+var first = [1, 2, 3];
+var second = [4, 5];
+nonMutatingPush(first, second);
+```
+
+:heavy_check_mark: Your code should use the concat method.<br/>
+:heavy_check_mark:Your code should not use the push method.<br/>
+:heavy_check_mark:The first array should not change.<br/>
+:heavy_check_mark:The second array should not change.<br/>
+:heavy_check_mark:nonMutatingPush([1, 2, 3], [4, 5]) should return [1, 2, 3, 4, 5].
