@@ -85,7 +85,7 @@ nonMutatingPush(first, second);
 ## challenge #15: 
 ##### Functional Programming: Use the reduce Method to Analyze Data
 
-:heavy_exclamation_mark: The global variable is [here](https://github.com/zelol/seb-freecodecamp/blob/master/functional-programming/watchList.md).
+:heavy_exclamation_mark: The global variable "watchList" is [here](https://github.com/zelol/seb-freecodecamp/blob/master/functional-programming/watchList.md).
 
 ```
 // Add your code below this line
