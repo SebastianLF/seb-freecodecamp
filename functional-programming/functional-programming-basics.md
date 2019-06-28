@@ -91,18 +91,27 @@ nonMutatingPush(first, second);
 // Add your code below this line
 
 var averageRating;
-var length;
 
-averageRating = watchList
-.filter(function(value, index, arr) {
-  return value.Director === "Christopher Nolan";
-})
-.reduce(function(acc, value, index, arr){
-  length = index + 1;
-  return acc + Number(value.imdbRating);
-}, 0);
+function filterByDirector(list, director){
+  return list.filter(function(value, index, arr) {
+    return value.Director === director;
+  })
+}
 
-averageRating /= length;
+function sumRating(list, key) {
+  return list.reduce(function(acc, value, index, arr){
+    length = index + 1;
+    return acc + Number(value[key]);
+  }, 0)
+}
+
+function avgRatingCompute(sum, length) {
+  return sum /= length;
+}
+
+var arrFiltered = filterByDirector(watchList, "Christopher Nolan");
+averageRating = sumRating(arrFiltered, 'imdbRating');
+averageRating = avgRatingCompute(averageRating, arrFiltered.length);
 
 // Add your code above this line
 
