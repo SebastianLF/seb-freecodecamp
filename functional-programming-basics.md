@@ -39,5 +39,24 @@ nonMutatingSplice(inputCities);
 :heavy_check_mark: Your code should not use the splice method.<br/>
 :heavy_check_mark: The inputCities array should not change.<br/>
 :heavy_check_mark: nonMutatingSplice(["Chicago", "Delhi", "Islamabad", "London", "Berlin"]) should return ["Chicago", "Delhi", "Islamabad"].
+<br/><br/>
+## challenge #13: 
+##### Functional Programming: Combine Two Arrays Using the concat Method
 
+```
+function nonMutatingConcat(original, attach) {
+  // Add your code below this line
+  
+  return [].concat(original).concat(attach);
+  
+  // Add your code above this line
+}
+var first = [1, 2, 3];
+var second = [4, 5];
+nonMutatingConcat(first, second);
+```
 
+:heavy_check_mark: Your code should use the concat method.<br/>
+:heavy_check_mark: The first array should not change.<br/>
+:heavy_check_mark: The second array should not change.<br/>
+:heavy_check_mark: nonMutatingConcat([1, 2, 3], [4, 5]) should return [1, 2, 3, 4, 5].
