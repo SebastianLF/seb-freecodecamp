@@ -109,9 +109,7 @@ function avgRatingCompute(sum, length) {
   return sum /= length;
 }
 
-var arrFiltered = filterByDirector(watchList, "Christopher Nolan");
-averageRating = sumRating(arrFiltered, 'imdbRating');
-averageRating = avgRatingCompute(averageRating, arrFiltered.length);
+averageRating = avgRatingCompute(sumRating(filterByDirector(watchList, "Christopher Nolan"), 'imdbRating'), filterByDirector(watchList, "Christopher Nolan").length);
 
 // Add your code above this line
 
