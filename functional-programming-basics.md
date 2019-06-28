@@ -19,5 +19,23 @@ sliceArray(inputAnim, 1, 3);
 - sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 3) should return ["Dog", "Tiger"].
 - sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 0, 1) should return ["Cat"].
 - sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 4) should return ["Dog", "Tiger", "Zebra"].
+<br/><br/><br/><br/>
+## challenge #12:
+
+```
+function nonMutatingSplice(cities) {
+  // Add your code below this line
+  return cities.slice(0, 3);
+  
+  // Add your code above this line
+}
+var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+nonMutatingSplice(inputCities);
+```
+
+- Your code should use the slice method.
+- Your code should not use the splice method.
+- The inputCities array should not change.
+- nonMutatingSplice(["Chicago", "Delhi", "Islamabad", "London", "Berlin"]) should return ["Chicago", "Delhi", "Islamabad"].
 
 
