@@ -203,5 +203,30 @@ sentensify("May-the-force-be-with-you");
 :heavy_check_mark: sentensify("May-the-force-be-with-you") should return "May the force be with you".<br/>
 :heavy_check_mark: sentensify("The.force.is.strong.with.this.one") should return "The force is strong with this one".<br/>
 :heavy_check_mark: sentensify("There,has,been,an,awakening") should return "There has been an awakening".<br/>
+<br/><br/>
+## challenge #20: 
+##### Functional Programming: Apply Functional Programming to Convert Strings to URL Slugs
+
+```
+// the global variable
+var globalTitle = "Winter Is Coming";
+
+// Add your code below this line
+function urlSlug(title) {
+  
+  return title.trim().split(/ +/g).join("-").toLowerCase();
+  
+}
+// Add your code above this line
+
+var winterComing = urlSlug(globalTitle); // Should be "winter-is-coming"
+```
+
+:heavy_check_mark: The globalTitle variable should not change.<br/>
+:heavy_check_mark: Your code should not use the replace method for this challenge.<br/>
+:heavy_check_mark: urlSlug("Winter Is Coming") should return "winter-is-coming".<br/>
+:heavy_check_mark: urlSlug(" Winter Is  Coming") should return "winter-is-coming".<br/>
+:heavy_check_mark: urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone") should return "a-mind-needs-books-like-a-sword-needs-a-whetstone".<br/>
+:heavy_check_mark: urlSlug("Hold The Door") should return "hold-the-door".<br/>
 
 
