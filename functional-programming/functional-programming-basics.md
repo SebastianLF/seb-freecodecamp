@@ -163,4 +163,24 @@ nonMutatingSort(globalArray);
 :heavy_check_mark: Your code should use the concat method.<br/>
 :heavy_check_mark: The globalArray variable should not change.<br/>
 :heavy_check_mark: nonMutatingSort(globalArray) should return [2, 3, 5, 6, 9].<br/>
+<br/><br/>
+## challenge #18: 
+##### Functional Programming: Split a String into an Array Using the split Method
+
+```
+function splitify(str) {
+  // Add your code below this line
+  
+  return str.split(/[^a-z]/i);
+  
+  // Add your code above this line
+}
+splitify("Hello World,I-am code");
+```
+
+:heavy_check_mark: Your code should use the split method.<br/>
+:heavy_check_mark: splitify("Hello World,I-am code") should return ["Hello", "World", "I", "am", "code"].<br/>
+:heavy_check_mark: splitify("Earth-is-our home") should return ["Earth", "is", "our", "home"].<br/>
+:heavy_check_mark: splitify("This.is.a-sentence") should return ["This", "is", "a", "sentence"].<br/>
+
 
