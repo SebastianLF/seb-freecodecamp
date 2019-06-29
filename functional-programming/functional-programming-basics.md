@@ -177,6 +177,68 @@ console.log(fixedValue); // Should print 4
 :heavy_check_mark: Your incrementer function should take a parameter.<br/>
 :heavy_check_mark: Your incrementer function should return a value that is one larger than the fixedValue value.<br/>
 <br/><br/>
+## challenge #6:
+##### Functional Programming: Refactor Global Variables Out of Functions
+
+```
+// the global variable
+var bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+/* This function should add a book to the list and return the list */
+// New parameters should come before the bookName one
+
+// Add your code below this line
+function add (list, bookName) {
+  
+  return list.concat(bookName)
+  
+  // Add your code above this line
+}
+
+/* This function should remove a book from the list and return the list */
+// New parameters should come before the bookName one
+
+// Add your code below this line
+function remove (list, bookName) {
+    return list.filter(function(elem){ return elem !== bookName })
+}
+
+var newBookList = add(bookList, 'A Brief History of Time');
+var newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
+var newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
+
+console.log(bookList);
+```
+
+:heavy_check_mark: bookList should not change and still equal ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"].<br/>
+:heavy_check_mark: newBookList should equal ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae", "A Brief History of Time"].<br/>
+:heavy_check_mark: newerBookList should equal ["The Hound of the Baskervilles", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"].<br/>
+:heavy_check_mark: newestBookList should equal ["The Hound of the Baskervilles", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae", "A Brief History of Time"].
+<br/><br/>
+## challenge #7:
+##### Functional Programming: Use the map Method to Extract Data from an Array
+
+:heavy_exclamation_mark: The global variable "watchList" is [here](https://github.com/zelol/seb-freecodecamp/blob/master/functional-programming/watchList.md).
+
+```
+// Add your code below this line
+
+var rating = [];
+
+rating = watchList.map(function(elem){
+  return { title: elem.Title, rating: elem.imdbRating }
+});
+
+// Add your code above this line
+
+console.log(rating); 
+```
+
+:heavy_check_mark: The watchList variable should not change.<br/>
+:heavy_check_mark: Your code should not use a for loop.<br/>
+:heavy_check_mark: Your code should use the map method.<br/>
+:heavy_check_mark: rating should equal [{"title":"Inception","rating":"8.8"},{"title":"Interstellar","rating":"8.6"},{"title":"The Dark Knight","rating":"9.0"},{"title":"Batman Begins","rating":"8.3"},{"title":"Avatar","rating":"7.9"}].
+<br/><br/>
 ## challenge #11:
 ##### Functional Programming: Return Part of an Array Using the slice Method
 
