@@ -182,5 +182,27 @@ splitify("Hello World,I-am code");
 :heavy_check_mark: splitify("Hello World,I-am code") should return ["Hello", "World", "I", "am", "code"].<br/>
 :heavy_check_mark: splitify("Earth-is-our home") should return ["Earth", "is", "our", "home"].<br/>
 :heavy_check_mark: splitify("This.is.a-sentence") should return ["This", "is", "a", "sentence"].<br/>
+<br/><br/>
+## challenge #19: 
+##### Functional Programming: Combine an Array into a String Using the join Method
+
+```
+function sentensify(str) {
+  // Add your code below this line
+  
+  console.log(str.split(/[-]/));
+  return str.split(/[-,.]/).join(" ");
+
+  // Add your code above this line
+}
+sentensify("May-the-force-be-with-you");
+```
+
+:heavy_check_mark: Your code should use the join method.<br/>
+:heavy_check_mark: Your code should not use the replace method.<br/>
+:heavy_check_mark: sentensify("May-the-force-be-with-you") should return a string.<br/>
+:heavy_check_mark: sentensify("May-the-force-be-with-you") should return "May the force be with you".<br/>
+:heavy_check_mark: sentensify("The.force.is.strong.with.this.one") should return "The force is strong with this one".<br/>
+:heavy_check_mark: sentensify("There,has,been,an,awakening") should return "There has been an awakening".<br/>
 
 
