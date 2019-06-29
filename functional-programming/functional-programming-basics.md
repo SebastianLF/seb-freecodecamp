@@ -249,3 +249,24 @@ checkPositive([1, 2, 3, -4, 5]);
 :heavy_check_mark: checkPositive([1, 2, 3, -4, 5]) should return false.<br/>
 :heavy_check_mark: checkPositive([1, 2, 3, 4, 5]) should return true.<br/>
 :heavy_check_mark: checkPositive([1, -2, 3, -4, 5]) should return false.<br/>
+<br/><br/>
+## challenge #22: 
+##### Functional Programming: Use the some Method to Check that Any Elements in an Array Meet a Criteria
+
+```
+function checkPositive(arr) {
+  // Add your code below this line
+  
+  return arr.some(function(elem){
+    return elem > 0;
+  });
+  
+  // Add your code above this line
+}
+checkPositive([1, 2, 3, -4, 5]);
+```
+
+:heavy_check_mark: Your code should use the some method.<br/>
+:heavy_check_mark: checkPositive([1, 2, 3, -4, 5]) should return true.<br/>
+:heavy_check_mark: checkPositive([1, 2, 3, 4, 5]) should return true.<br/>
+:heavy_check_mark: checkPositive([-1, -2, 3, -4, -5]) should return false.<br/>
