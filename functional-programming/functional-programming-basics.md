@@ -155,6 +155,28 @@ console.log(fixedValue); // Should print 4
 :heavy_check_mark: Your function incrementer should not change the value of fixedValue.<br/>
 :heavy_check_mark: Your incrementer function should return a value that is one larger than the fixedValue value.
 <br/><br/>
+## challenge #5:
+##### Functional Programming: Pass Arguments to Avoid External Dependence in a Function
+
+```
+// the global variable
+var fixedValue = 4;
+
+// Add your code below this line
+function incrementer (value) {
+  
+  return value + 1;
+  // Add your code above this line
+}
+
+var newValue = incrementer(fixedValue); // Should equal 5
+console.log(fixedValue); // Should print 4
+```
+
+:heavy_check_mark: Your function incrementer should not change the value of fixedValue.<br/>
+:heavy_check_mark: Your incrementer function should take a parameter.<br/>
+:heavy_check_mark: Your incrementer function should return a value that is one larger than the fixedValue value.<br/>
+<br/><br/>
 ## challenge #11:
 ##### Functional Programming: Return Part of an Array Using the slice Method
 
