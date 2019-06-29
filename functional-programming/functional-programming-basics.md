@@ -239,6 +239,86 @@ console.log(rating);
 :heavy_check_mark: Your code should use the map method.<br/>
 :heavy_check_mark: rating should equal [{"title":"Inception","rating":"8.8"},{"title":"Interstellar","rating":"8.6"},{"title":"The Dark Knight","rating":"9.0"},{"title":"Batman Begins","rating":"8.3"},{"title":"Avatar","rating":"7.9"}].
 <br/><br/>
+## challenge #8:
+##### Functional Programming: Implement map on a Prototype
+
+```
+// the global Array
+var s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback){
+  var newArray = [];
+  // Add your code below this line
+
+  this.forEach(function(elem, index, arr){
+    newArray.push(callback(elem));
+  });
+  
+  // Add your code above this line
+  return newArray;
+
+};
+
+var new_s = s.myMap(function(item){
+  return item * 2;
+});
+```
+
+:heavy_check_mark: new_s should equal [46, 130, 196, 10].<br/>
+:heavy_check_mark: Your code should not use the map method.
+<br/><br/>
+## challenge #9:
+##### Functional Programming: Use the filter Method to Extract Data from an Array
+
+:heavy_exclamation_mark: The global variable "watchList" is [here](https://github.com/zelol/seb-freecodecamp/blob/master/functional-programming/watchList.md).
+
+```
+// Add your code below this line
+
+var filteredList;
+
+filteredList = watchList
+.filter(function(elem){ return Number(elem.imdbRating) >= 8 })
+.map(function(elem){ return { "title": elem.Title, "rating": elem.imdbRating } });
+
+// Add your code above this line
+
+console.log(filteredList); 
+```
+
+:heavy_check_mark: The watchList variable should not change.<br/>
+:heavy_check_mark: Your code should use the filter method.<br/>
+:heavy_check_mark: Your code should not use a for loop.<br/>
+:heavy_check_mark: filteredList should equal [{"title": "Inception","rating": "8.8"},{"title": "Interstellar","rating": "8.6"},{"title": "The Dark Knight","rating": "9.0"},{"title": "Batman Begins","rating": "8.3"}]
+<br/><br/>
+## challenge #10:
+##### Functional Programming: Implement the filter Method on a Prototype
+
+```
+// the global Array
+var s = [23, 65, 98, 5];
+
+Array.prototype.myFilter = function(callback){
+  var newArray = [];
+  // Add your code below this line
+  
+  this.forEach(function(elem){
+    if(callback( elem )) { newArray.push(elem); }
+  });
+
+  // Add your code above this line
+  return newArray;
+
+};
+
+var new_s = s.myFilter(function(item){
+  return item % 2 === 1;
+});
+```
+
+:heavy_check_mark: new_s should equal [23, 65, 5].<br/>
+:heavy_check_mark: Your code should not use the filter method.
+<br/><br/>
 ## challenge #11:
 ##### Functional Programming: Return Part of an Array Using the slice Method
 
