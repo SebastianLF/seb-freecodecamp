@@ -270,3 +270,26 @@ checkPositive([1, 2, 3, -4, 5]);
 :heavy_check_mark: checkPositive([1, 2, 3, -4, 5]) should return true.<br/>
 :heavy_check_mark: checkPositive([1, 2, 3, 4, 5]) should return true.<br/>
 :heavy_check_mark: checkPositive([-1, -2, 3, -4, -5]) should return false.<br/>
+<br/><br/>
+## challenge #23: 
+##### Functional Programming: Introduction to Currying and Partial Application
+
+```
+function add(x) {
+  // Add your code below this line
+  
+  return function(y){
+    return function(z) {
+      return x + y + z;
+    } 
+  }
+  
+  // Add your code above this line
+}
+add(10)(20)(30);
+```
+
+:heavy_check_mark: add(10)(20)(30) should return 60.<br/>
+:heavy_check_mark: add(1)(2)(3) should return 6.<br/>
+:heavy_check_mark: add(11)(22)(33) should return 66.<br/>
+:heavy_check_mark: Your code should include a final statement that returns x + y + z.<br/>
