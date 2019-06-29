@@ -228,5 +228,24 @@ var winterComing = urlSlug(globalTitle); // Should be "winter-is-coming"
 :heavy_check_mark: urlSlug(" Winter Is  Coming") should return "winter-is-coming".<br/>
 :heavy_check_mark: urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone") should return "a-mind-needs-books-like-a-sword-needs-a-whetstone".<br/>
 :heavy_check_mark: urlSlug("Hold The Door") should return "hold-the-door".<br/>
+<br/><br/>
+## challenge #21: 
+##### Functional Programming: Use the every Method to Check that Every Element in an Array Meets a Criteria
 
+```
+function checkPositive(arr) {
+  // Add your code below this line
+  
+    return arr.every(function(elem){
+        return elem > 0
+    });
+  
+  // Add your code above this line
+}
+checkPositive([1, 2, 3, -4, 5]);
+```
 
+:heavy_check_mark: Your code should use the every method.<br/>
+:heavy_check_mark: checkPositive([1, 2, 3, -4, 5]) should return false.<br/>
+:heavy_check_mark: checkPositive([1, 2, 3, 4, 5]) should return true.<br/>
+:heavy_check_mark: checkPositive([1, -2, 3, -4, 5]) should return false.<br/>
