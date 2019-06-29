@@ -134,6 +134,27 @@ alert(finalTabs.tabs);
 
 :heavy_check_mark: Work through the code and see if you can figure out the problem, then advance to the next challenge to learn more.
 <br/><br/>
+## challenge #4:
+##### Functional Programming: Avoid Mutations and Side Effects Using Functional Programming
+
+```
+// the global variable
+var fixedValue = 4;
+
+function incrementer (value) {
+  // Add your code below this line
+  
+  return value + 1;
+  // Add your code above this line
+}
+
+var newValue = incrementer(fixedValue); // Should equal 5
+console.log(fixedValue); // Should print 4
+```
+
+:heavy_check_mark: Your function incrementer should not change the value of fixedValue.<br/>
+:heavy_check_mark: Your incrementer function should return a value that is one larger than the fixedValue value.
+<br/><br/>
 ## challenge #11:
 ##### Functional Programming: Return Part of an Array Using the slice Method
 
