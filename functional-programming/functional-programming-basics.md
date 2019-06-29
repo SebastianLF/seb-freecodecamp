@@ -190,7 +190,6 @@ splitify("Hello World,I-am code");
 function sentensify(str) {
   // Add your code below this line
   
-  console.log(str.split(/[-]/));
   return str.split(/[-,.]/).join(" ");
 
   // Add your code above this line
