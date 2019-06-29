@@ -120,3 +120,27 @@ console.log(averageRating);
 :heavy_check_mark: Your code should use the reduce method.<br/>
 :heavy_check_mark: The averageRating should equal 8.675.<br/>
 :heavy_check_mark: Your code should not use a for loop.
+<br/><br/>
+## challenge #16: 
+##### Functional Programming: Sort an Array Alphabetically using the sort Method
+
+```
+function alphabeticalOrder(arr) {
+  // Add your code below this line
+  
+  return arr.slice(0).sort(function(a, b){
+    if(a < b){ return -1; }
+    if(a > b){ return 1; }
+    return 0;
+  });
+  
+  // Add your code above this line
+}
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+```
+
+:heavy_check_mark: Your code should use the sort method.<br/>
+:heavy_check_mark: alphabeticalOrder(["a", "d", "c", "a", "z", "g"]) should return ["a", "a", "c", "d", "g", "z"].<br/>
+:heavy_check_mark: alphabeticalOrder(["x", "h", "a", "m", "n", "m"]) should return ["a", "h", "m", "m", "n", "x"].<br/>
+:heavy_check_mark: alphabeticalOrder(["a", "a", "a", "a", "x", "t"]) should return ["a", "a", "a", "a", "t", "x"].<br/>
+
