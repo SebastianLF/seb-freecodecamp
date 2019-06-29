@@ -128,7 +128,7 @@ console.log(averageRating);
 function alphabeticalOrder(arr) {
   // Add your code below this line
   
-  return arr.slice(0).sort(function(a, b){
+  return arr.sort(function(a, b){
     if(a < b){ return -1; }
     if(a > b){ return 1; }
     return 0;
