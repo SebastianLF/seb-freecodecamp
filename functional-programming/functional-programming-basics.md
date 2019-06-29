@@ -143,4 +143,24 @@ alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
 :heavy_check_mark: alphabeticalOrder(["a", "d", "c", "a", "z", "g"]) should return ["a", "a", "c", "d", "g", "z"].<br/>
 :heavy_check_mark: alphabeticalOrder(["x", "h", "a", "m", "n", "m"]) should return ["a", "h", "m", "m", "n", "x"].<br/>
 :heavy_check_mark: alphabeticalOrder(["a", "a", "a", "a", "x", "t"]) should return ["a", "a", "a", "a", "t", "x"].<br/>
+<br/><br/>
+## challenge #17: 
+##### Functional Programming: Return a Sorted Array Without Changing the Original Array
+
+```
+var globalArray = [5, 6, 3, 2, 9];
+function nonMutatingSort(arr) {
+  // Add your code below this line
+  
+  return [].concat(arr).sort();
+
+  // Add your code above this line
+}
+nonMutatingSort(globalArray);
+```
+
+:heavy_check_mark: Your code should use the sort method.<br/>
+:heavy_check_mark: Your code should use the concat method.<br/>
+:heavy_check_mark: The globalArray variable should not change.<br/>
+:heavy_check_mark: nonMutatingSort(globalArray) should return [2, 3, 5, 6, 9].<br/>
 
